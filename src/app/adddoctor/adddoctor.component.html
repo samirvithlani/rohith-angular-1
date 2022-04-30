@@ -1,0 +1,26 @@
+<form [formGroup]="doctorgroup" (click)="submit()">
+
+    <div>
+        <label>
+            name
+        </label>
+        <input type="text" formControlName="name">
+    </div>
+    <div>
+        <label>
+            email
+        </label>
+        <input type="text" formControlName="email">
+    </div>
+    <div>
+        <label>
+            password
+        </label>
+        <input type="text" formControlName="pasword">
+    </div>
+    <div>
+        <input type="submit" value="submit">
+    </div>
+
+
+</form>
