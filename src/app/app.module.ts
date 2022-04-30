@@ -5,10 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
+import { AdddoctorComponent } from './adddoctor/adddoctor.component';
+import { ListdoctorComponent } from './listdoctor/listdoctor.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    AdddoctorComponent,
+    ListdoctorComponent
   ],
   imports: [
     BrowserModule,
