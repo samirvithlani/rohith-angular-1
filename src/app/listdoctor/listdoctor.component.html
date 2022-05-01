@@ -1,1 +1,20 @@
-<p>listdoctor works!</p>
+<table>
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>CreationTime</th>
+        <th>IsAdmin Or Not</th>
+        <th>Action</th>
+    </tr>
+    <tr *ngFor="let u of users">
+        <td>{{u._id}}</td>
+        <td>{{u.name}}</td>
+        <td>{{u.email}}</td>
+        <td>{{u.createdAt}}</td>
+        <td>{{u.isAdmin}}</td>
+        <td><button (click)="delete(u._id)">Delete</button></td>
+        
+    </tr>
+</table>
+
